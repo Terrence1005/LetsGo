@@ -7,6 +7,7 @@ import (
 	"strconv"
 	"time"
 
+	"example.com/types"
 	"rsc.io/quote"
 )
 
@@ -42,6 +43,13 @@ func main() {
 	SwitchTrue()
 	DeferCheck()
 	DeferStackCheck()
+	types.Pointer()
+	fmt.Println(types.Vertex{1, 2})
+
+	v := types.Vertex{1, 2}
+	v.X = 5
+
+	fmt.Println(v)
 }
 
 // If statement
