@@ -24,3 +24,12 @@ type Vertex struct {
 	X int
 	Y int
 }
+
+func StructPointer() {
+	v := Vertex{1, 2}
+	p := &v
+	fmt.Print(p.X)
+	p.Y = 1e7
+	fmt.Print(v)
+
+}

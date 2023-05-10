@@ -50,6 +50,7 @@ func main() {
 	v.X = 5
 
 	fmt.Println(v)
+	types.StructPointer()
 }
 
 // If statement
